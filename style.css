@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Space Mono', monospace;
+     overflow-x: hidden;
+}
+body{
+     min-height: 100vh;
+     width: 100vw;
+     background: #bbebeb;
+     display: flex;
+     flex-direction: column;    
+}
+.title{
+     margin-top: 50px;
+     color:#3D6666;
+     text-transform:uppercase ;
+     letter-spacing: 10px;
+     text-align: center;     
+}
+.container{
+     margin-top: 40px;
+     background: #FFFFFF;
+     box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+     border-radius: 25px 25px 0px 0px;
+     width: 100%;
+}
+.container-child{
+     margin: 32px;
+}
+.bill-tag{
+     color: #5E7A7D;
+}
+.dollar{
+     color: #5E7A7D;
+     position: absolute;
+     padding: 12px 19px;
+}
+#number{
+     background: #F3F9FA;
+     border-radius: 5px;
+     height: 48px;
+     width: 100%;
+     border: none;
+     outline: none;
+     margin-top: 6px;
+}
+#number:hover{
+     border: 2px solid #26C2AE;
+}
+.people{
+     background: #F3F9FA;
+     border-radius: 5px;
+     height: 48px;
+     width: 100%;
+     border: none;
+     outline: none;
+     margin-top: 6px;
+}
+.dollar-input > input{
+     color: #00474B;
+     font-size: 24px;
+     line-height: 36px;
+     text-align: right;
+     padding-right: 18px;
+}
+.select{
+     margin-top: 32px;
+}
+.select-tag{
+     font-size: 16px;
+     line-height: 24px;
+     color: #5E7A7D;
+}
+.btn-tip{
+     border-radius: 5px;
+     height: 48px;
+     width: 45%;
+     cursor: pointer;
+     background: #00474B;
+     color: #FFFFFF;
+     border: none;
+     outline: none;
+     font-size: 25px;
+
+}
+.btn-tip:hover{
+     background: #9FE8DF;
+}
+.none{
+     background: none;
+}
+.active-custom {
+     outline-color: #26C2AE;
+     color: #00474B;
+ }
+.btn-tip.active{
+     background-color:  #26C2AE;
+     color: #00474B;
+     transition: all .5s;
+}
+
+.box-container{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 16px;
+     margin-top: 16px;
+}
+.box{
+     width: 46%;
+}
+
+.box-name{
+     text-align: center;
+     font-size: 24px;
+     line-height: 47px;
+     color: #FFFFFF;
+}
+
+.box-number{
+     background: #F3F9FA;
+     border-radius: 5px;
+     font-size: 24px;
+     line-height: 36px;
+     text-align: right;
+     color: #00474B;
+     border: none;
+     outline: none;
+     height: 48px;
+     padding-right: 17px;
+     width: 100%;
+}
+.box-number:hover{
+     border: 2px solid #26C2AE;
+}
+.box-number::placeholder{
+     text-align: center;
+}
+.number-people{
+     margin-top: 32px;
+}
+.number-tag{
+     font-size: 16px;
+     line-height: 24px;
+     color: #5E7A7D;
+}
+.icon{
+     max-width: 13px;
+     max-height: 15px;
+     position: relative;
+     left: 10%;
+}
+.user-input{
+     display: flex;
+     align-items: center;
+     margin-left: -12px;
+}
+.user-input > input{
+     color: #00474B;
+     font-size: 24px;
+     line-height: 36px;
+     text-align: right;
+     padding-right: 18px;
+}
+
+.last-cont{
+     background: #00474B;
+     border-radius: 15px;
+     margin: auto;
+    width: 90%;
+}
+.last-container{ 
+     display: flex;
+     padding: 39px 24px;
+     justify-content: space-between;
+}
+.last-box{
+     display: flex;
+     padding: 15px 24px;
+     justify-content: space-between;
+}
+
+.amount{
+     font-size: 16px;
+     line-height: 24px;
+     color: #FFFFFF;
+     text-transform:capitalize ;
+}
+.person{
+     font-size: 13px;
+     line-height: 19px;  
+     color: #7F9D9F;
+}
+.result{
+     font-size: 32px;
+     line-height: 47px;
+     text-align: right;
+     letter-spacing: -0.666667px;
+     color: #26C2AE;
+}
+.result2{
+     font-size: 32px;
+     line-height: 47px;
+     text-align: right;
+     letter-spacing: -0.666667px;
+     color: #26C2AE;
+}
+.reset{
+     background: #26C2AE;
+     border-radius: 5px;
+     font-size: 20px;
+     line-height: 30px;
+     margin: 22px 24px;
+     color: #00474B;
+     border: none;
+     width: 85%;
+     height: 48px;
+     cursor: pointer;
+     text-transform: uppercase;
+}
+.reset:hover{
+     background: #0D686D;
+}
+@media only screen and (min-width: 1024px) {
+     .title{
+          margin-top: 163px;
+     }
+     .container{
+          margin: auto;
+          width: 70%;
+          display: flex;
+          flex-direction: row;
+          border-radius: 25px  25px 0px 0px;
+     }
+     .right-part{
+          width: 55%;
+          margin: 0px;
+          box-sizing: border-box;
+          justify-content: space-between;
+          padding: 32px;
+     }
+     .reset{
+          margin-top: 134px;
+     }
+     .box{
+          width: 45%;
+     }
+}
